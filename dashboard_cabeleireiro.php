@@ -123,7 +123,6 @@ new Chart(ctxServicos, {
     datasets: [{
       label: 'Serviços Realizados',
       data: dados.qtd,
-      //backgroundColor: ['#a855f7', '#ec4899', '#38bdf8', '#facc15', '#10b981'],
       borderRadius: 8
     }]
   },
