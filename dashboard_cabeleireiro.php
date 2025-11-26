@@ -125,15 +125,13 @@ new Chart(ctxServicos, {
       data: dados.qtd,
       borderRadius: 8
     }]
-  },
-  options: {
-    scales: {
-      y: { beginAtZero: true, title: { display: true, text: 'Quantidade' } }
-    },
-    plugins: {
-      legend: { display: false }
-    }
-  }
+  }, options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+  
 });
 
 // 2️⃣ Agendamentos do mês
