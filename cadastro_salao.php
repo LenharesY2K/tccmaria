@@ -77,7 +77,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     body {
-      height: 100%;
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+      height: 100vh;
       margin: 0;
       font-family: "Inter", sans-serif;
       background:
@@ -89,8 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         /* #A1CAE0 */
         #ffffff;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      background-repeat: no-repeat;
     }
 
     /* ====== CARD ====== */
@@ -101,8 +101,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       border-radius: 1rem;
       padding: 2.5rem 2rem;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease;
       text-align: center;
+      margin: auto;
+      border-radius: 40px;
     }
 
     .card-cadastro:hover {
@@ -153,6 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       background: #fff;
       transition: all 0.2s ease;
       font-size: 1rem;
+      border-radius: 40px;
     }
 
     input:focus {
@@ -200,6 +203,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     a:hover {
       text-decoration: underline;
     }
+
+    .card-cadastro h2 {
+      font-family: Poppins, sans-serif;
+      margin-left: 10px;
+      color: #6C5CE7;
+      font-weight: 800;
+    }
+    .header-logo{
+      margin-bottom: 30px;
+    }
+
+    .card-cadastro input {
+      font-family: poppins, sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .card-cadastro button {
+      font-family: poppins, sans-serif;
+    }
+
+    .card-cadastro h3 {
+      font-family: poppins, sans-serif;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
   </style>
 </head>
 
@@ -208,7 +237,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="card-cadastro">
     <div class="header-logo">
       <img src="logo.png" alt="Logo do Salão">
-      <h2>Cadastro de Salão</h2>
+      <h2>Cadastrar Salão</h2>
     </div>
 
     <?php if (isset($sucesso)): ?>
@@ -220,7 +249,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <form method="POST">
         <h3>Informações do Salão</h3>
         <input type="text" name="nome_salao" placeholder="Nome do Salão" required>
-        <input type="text" name="endereco" placeholder="Endereço" required>
+        <input type="text" name="endereco" placeholder="Ex: Avenida Paulista, 1000,  São Paulo, SP" required>
         <input type="text" name="telefone" placeholder="Telefone" required>
 
         <h3>Responsável pelo Salão</h3>
