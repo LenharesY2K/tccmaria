@@ -251,7 +251,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <form method="POST">
         <h3>Informações do Salão</h3>
         <input type="text" name="nome_salao" placeholder="Nome do Salão" required>
-        <input type="text" name="endereco" placeholder="Ex: Avenida Paulista, 1000,  São Paulo, SP" required>
+        <input type="text" name="endereco" placeholder="Endereco ex: Avenida Paulista, 1000,  São Paulo, SP" required>
         <input type="text" name="telefone" placeholder="Telefone" required>
 
         <h3>Responsável pelo Salão</h3>
