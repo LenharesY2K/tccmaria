@@ -100,11 +100,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       background: #fff;
       border-radius: 1rem;
       padding: 2.5rem 2rem;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.28);
       transition: transform 0.3s ease;
       text-align: center;
       margin: auto;
       border-radius: 40px;
+      
     }
 
     .card-cadastro:hover {
@@ -138,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     /* ====== SUBTÍTULOS ====== */
     h3 {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: var(--accent);
       margin-top: 1.5rem;
@@ -176,6 +177,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       box-shadow: 0 6px 18px rgba(108, 92, 231, .35);
       transition: all 0.2s ease;
       margin-top: 1rem;
+      font-size: 24px;
     }
 
     button:hover {
